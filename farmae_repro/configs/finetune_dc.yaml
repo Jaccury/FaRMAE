@@ -1,0 +1,22 @@
+seed: 42
+device: cuda
+output_dir: checkpoints
+log_every: 20
+
+data:
+  name: synthetic
+  length: 1500
+  image_size: 224
+
+model:
+  patch_size: 16
+  embed_dim: 384
+  depth: 6
+  num_heads: 6
+  mlp_ratio: 4.0
+
+train:
+  batch_size: 16
+  epochs: 2
+  lr: 2.0e-4
+  weight_decay: 0.01
